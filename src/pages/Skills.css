@@ -1,0 +1,35 @@
+.skills-container {
+  background-color: transparent;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.skills-container h1 {
+    justify-self: center;
+}
+
+.skill-card {
+  background-color: #322e3c;
+  color: white;
+  transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+}
+
+.skill-icon {
+  font-size: 40px;
+  color: #61dafb;
+}
+
+.progress {
+  height: 10px;
+  background-color: #2c2c2c;
+}
+
+.progress-bar {
+  background-color: #61dafb;
+  font-size: 12px;
+  color: black;
+}

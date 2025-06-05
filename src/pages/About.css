@@ -1,0 +1,44 @@
+.about-container h2, h1 {
+    color: white;
+    justify-self: left;
+    margin: 0 0 20px 0;
+    font-family: 'Roboto Mono', sans-serif;
+    display: flex !important;
+    align-items: center !important;
+    gap: 20px;
+}
+
+.about-container h1 {
+    justify-self: center;
+}
+
+.about-container {
+    padding: 0;
+}
+
+.about-container p {
+    margin-left: 100px;
+}
+
+.about-container > div {
+    margin-top: 30px;
+}
+
+.info-list {
+    margin: 0 0 30px 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.info-list div {
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.info-list strong {
+    width: 220px;
+    text-align: left;
+    display: inline-block;
+}
