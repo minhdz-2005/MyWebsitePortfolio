@@ -45,3 +45,46 @@
 .nav-link:hover, .nav-link:focus {
     color: rgb(0, 0, 168) !important;
 }
+
+@media (max-width: 768px) {
+    .vertical-navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 60px;
+        flex-direction: row;
+        z-index: 1000;
+    }
+
+    .navbar-container {
+        flex-direction: row;
+        width: 100vw;
+        height: 60px;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 2px 8px 1px rgb(3, 1, 24);
+    }
+
+    .nav-box {
+        flex-direction: row;
+        margin-bottom: 0;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar-nav {
+        flex-direction: row !important;
+        gap: 5px;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-link {
+        font-size: 16px;
+        padding: 8px 10px;
+        justify-content: center;
+    }
+}
