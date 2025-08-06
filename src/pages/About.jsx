@@ -24,7 +24,7 @@ const About = () => {
             key: 'intro',
             content: (
                 <>
-                    <h1 className="text-white">
+                    <h1 className="text-white text-center my-4">
                         <FaUserEdit /> ABOUT ME
                     </h1>
 

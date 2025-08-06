@@ -77,7 +77,7 @@
     }
 
     .info-list strong {
-        width: 120px;
-        font-size: 1rem;
+        width: fit-content;
+        margin-right: 5px;
     }
 }
