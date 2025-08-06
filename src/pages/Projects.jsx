@@ -47,7 +47,23 @@ const Projects = () => {
             role: "Building frontend, backend AI, language processing, database connectivity",
             image: "/images/DiseasePredictor.png",
             githubLink: "https://github.com/minhdz-2005/DiseasePredictor"
+        },
+
+        {
+            title: "Travel Tour Booking Website",
+            description: "A full-stack web application that allows users to explore and book tours easily. The system supports tour searching, filtering, booking management, and user authentication, providing a seamless travel planning experience.",
+            features: [
+                "Explore and search for tours by location, price, duration, and date",
+                "View detailed tour information including itinerary, highlights, and schedules",
+                "Tour booking system with user authentication",
+                "Admin dashboard for managing tours, users, and bookings"
+            ],
+            techStack: "React, Node.js, Express, MongoDB",
+            role: "Fullstack development: frontend UI, backend RESTful API, MongoDB integration, authentication & authorization",
+            image: "/images/MRyokou.png",
+            githubLink: "https://github.com/minhdz-2005/MRyokouFrontend"
         }
+
     ];
 
     return (

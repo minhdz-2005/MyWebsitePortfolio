@@ -51,7 +51,7 @@ const About = () => {
                         <div><strong>Programming Language:</strong> <span>JavaScript, C#, Python</span></div>
                         <div><strong>Frontend:</strong> <span>React.js, HTML/CSS, BoostrapCSS</span></div>
                         <div><strong>Backend:</strong> <span>Express.js, ASP.NET Core</span></div>
-                        <div><strong>Database:</strong> <span>MongoDB, SQL Server, PostgreSQL</span></div>
+                        <div><strong>Database:</strong> <span>MongoDB, SQL Server</span></div>
                         <div><strong>ORM:</strong> <span>Entity Framework Core</span></div>
                         <div><strong>Tools:</strong> <span>Figma, Git</span></div>
                     </div>
@@ -64,7 +64,7 @@ const About = () => {
                 <div className="experience">
                     <h2><MdWorkHistory /> Experience</h2>
                     <p className="fs-5">
-                        I currently have no practical work experience, but have completed some personal projects such as a portfolio website, an AI disease prediction system.
+                        I currently have no practical work experience, but have completed some personal projects such as a portfolio website, an AI disease prediction system and travel tour booking system.
                     </p>
                     <Link to="/projects" className="btn btn-outline-info">View my projects</Link>
                 </div>

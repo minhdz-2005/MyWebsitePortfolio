@@ -25,7 +25,7 @@ const Home = () => {
                 </div>
 
                 <div className="info-box col-md-7 d-flex flex-column justify-content-center">
-                    <h1>Hello!</h1>
+                    <h1>Hello World!</h1>
                     <h2>I'm <strong>Nguyen Duc Minh</strong></h2>
                     <p className='typing'>
                         {text}

@@ -1,40 +1,42 @@
 import './Skills.css'
 import { FaReact, FaPython, FaGitAlt, FaHtml5, FaCss3Alt, FaCss3, FaJs, FaNodeJs, FaFigma, FaTools } from 'react-icons/fa'
-import { SiMongodb, SiFastapi, SiPostgresql, SiFramework } from 'react-icons/si'
-import { TbBrandCSharp } from 'react-icons/tb'
+import { SiMongodb, SiFastapi, SiFramework, SiSwagger } from 'react-icons/si'
+import { TbBrandCpp, TbBrandCSharp } from 'react-icons/tb'
 import { BiLogoVisualStudio } from 'react-icons/bi'
-import { DiMsqlServer, DiVisualstudio } from 'react-icons/di'
+import { DiJava, DiMsqlServer, DiVisualstudio } from 'react-icons/di'
 // eslint-disable-next-line no-unused-vars
 import { motion } from 'framer-motion'
 import { PiFileCSharp } from 'react-icons/pi'
 import { LuBrainCircuit } from 'react-icons/lu'
 
 const skills = {
-    frontend: [
-        { name: 'React.js', icon: <FaReact />, level: 40 },
+    'frontend': [
+        { name: 'React.js', icon: <FaReact />, level: 40, projectUrl: 'https://github.com/minhdz-2005/MyWebsitePortfolio'  },
         { name: 'HTML', icon: <FaHtml5 />, level: 50 },
         { name: 'CSS', icon: <FaCss3Alt />, level: 40 },
         { name: 'Bootstrap CSS', icon: <FaCss3 />, level: 30 }
     ],
-    backend: [
-        { name: 'Express.js', icon: <FaNodeJs />, level: 30 },
-        { name: 'ASP.Net Core', icon: <PiFileCSharp />, level: 50 }
+    'backend': [
+        { name: 'Express.js', icon: <FaNodeJs />, level: 30, projectUrl: 'https://github.com/minhdz-2005/MRyokouBackend'  },
+        { name: 'ASP.Net Core', icon: <PiFileCSharp />, level: 50, projectUrl: 'https://github.com/minhdz-2005/InternetCafe'  }
     ],
-    API: [
-        { name: 'FastAPI', icon: <SiFastapi />, level: 30 },
-        { name: 'C# API', icon: <TbBrandCSharp />, level: 40 }
+    'APIs': [
+        { name: 'Swagger', icon: <SiSwagger />, level: 30 },
+        { name: 'RESTful API', icon: <FaTools />, level: 40 },
+        { name: 'FastAPI', icon: <SiFastapi />, level: 30, projectUrl: 'https://github.com/minhdz-2005/FastAPIforDP' }
     ],
-    programmingLanguages: [
-        { name: 'C#', icon: <TbBrandCSharp />, level: 60 },
-        { name: 'Python', icon: <FaPython />, level: 30 },
-        { name: 'Javascript', icon: <FaJs />, level: 30 }
+    'Programming Languages': [
+        { name: 'C/C++', icon: <TbBrandCpp />, level: 60 },
+        { name: 'C#', icon: <TbBrandCSharp />, level: 60, projectUrl: 'https://github.com/minhdz-2005/InternetCafe'  },
+        { name: 'Python', icon: <FaPython />, level: 30, projectUrl: 'https://github.com/minhdz-2005/FastAPIforDP'  },
+        { name: 'Javascript', icon: <FaJs />, level: 30, projectUrl: 'https://github.com/minhdz-2005/MRyokouFrontend'  },
+        { name: 'Java', icon: <DiJava />, level: 30}
     ],
-    database: [
+    'database': [
         { name: 'MongoDB', icon: <SiMongodb />, level: 30 },
-        { name: 'SQL Server', icon: <DiMsqlServer />, level: 50 },
-        { name: 'PostgreSQL', icon: <SiPostgresql />, level: 30 }
+        { name: 'SQL Server', icon: <DiMsqlServer />, level: 50 }
     ],
-    otherTools: [
+    'otherTools': [
         { name: 'Git', icon: <FaGitAlt />, level: 50 },
         { name: 'Figma', icon: <FaFigma />, level: 40 },
         { name: 'Visual Studio Code', icon: <BiLogoVisualStudio />, level: 70 },
@@ -77,6 +79,11 @@ const Skills = () => {
                                 {skill.level}%
                                 </div>
                             </div>
+                            {skill.projectUrl && (
+                                <a href={skill.projectUrl} target="_blank" rel="noopener noreferrer" className="btn btn-primary mt-3">
+                                    View Project
+                                </a>
+                            )}
                             </div>
                         </motion.div>
                         ))}
