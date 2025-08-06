@@ -42,3 +42,42 @@
     text-align: left;
     display: inline-block;
 }
+@media (max-width: 768px) {
+    .about-container {
+        padding: 0 10px;
+    }
+
+    .about-container h2,
+    .about-container h1 {
+        font-size: 1.3rem;
+        gap: 10px;
+        flex-direction: column;
+        align-items: flex-start !important;
+        text-align: left;
+    }
+
+    .about-container h1 {
+        justify-self: flex-start;
+        font-size: 1.5rem;
+    }
+
+    .about-container p {
+        margin-left: 0;
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    .about-container > div {
+        margin-top: 16px;
+    }
+
+    .info-list {
+        margin: 0 0 20px 0;
+        gap: 0.5rem;
+    }
+
+    .info-list strong {
+        width: 120px;
+        font-size: 1rem;
+    }
+}

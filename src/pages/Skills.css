@@ -33,3 +33,33 @@
   font-size: 12px;
   color: black;
 }
+@media (max-width: 768px) {
+  .skills-container {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .skills-container h1 {
+    font-size: 1.3rem;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+
+  .skill-card {
+    margin-bottom: 16px;
+    padding: 12px 8px;
+    font-size: 0.95rem;
+  }
+
+  .skill-icon {
+    font-size: 28px;
+  }
+
+  .progress {
+    height: 8px;
+  }
+
+  .progress-bar {
+    font-size: 10px;
+  }
+}

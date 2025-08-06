@@ -1,3 +1,22 @@
 .proj-container h1 {
     justify-self: center;
 }
+@media (max-width: 768px) {
+    .proj-container {
+        padding: 0 10px;
+    }
+
+    .proj-container h1 {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    /* Nếu có danh sách dự án, thêm responsive cho từng project card */
+    .project-card {
+        width: 100% !important;
+        margin-bottom: 16px;
+        padding: 12px 8px;
+        box-sizing: border-box;
+    }
+}

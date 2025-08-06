@@ -69,3 +69,33 @@
         font-size: 0.95rem;
     }
 }
+@media (max-width: 768px) {
+    .contact-section {
+        padding: 30px 8px;
+        border-radius: 8px;
+    }
+
+    .contact-section .title {
+        font-size: 1.5rem;
+        margin-bottom: 16px;
+    }
+
+    .contact-section p,
+    .contact-section ul {
+        font-size: 0.95rem;
+    }
+
+    .contact-section ul {
+        margin-bottom: 40px;
+    }
+
+    .contact-section ul strong {
+        width: 70px;
+        font-size: 0.95rem;
+    }
+
+    .contact-section .social-icons a {
+        margin: 0 6px;
+        font-size: 1.3rem;
+    }
+}
